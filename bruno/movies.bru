@@ -1,0 +1,15 @@
+meta {
+  name: movies
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:5500/api/movies
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

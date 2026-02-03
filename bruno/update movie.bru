@@ -1,0 +1,26 @@
+meta {
+  name: update movie
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:5500/api/movies/697fbb39608c747e0b44d953
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTdmYjc5Y2U3YjM4Y2QxZGNmNWIwZTEiLCJ1c2VybmFtZSI6Ikx1Y2FzIiwiZW1haWwiOiJsdWNhc0BnbWFpbC5jb20iLCJpYXQiOjE3Njk5Nzc3NTYsImV4cCI6MTc2OTk3OTU1Nn0.iSM3y8W_gN0t1qL9VhH9YB2KLS4Krtx_MzTBId2Os1s
+}
+
+body:json {
+  {
+    "year": 2010
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
