@@ -21,7 +21,7 @@ serverHttp.use("/api/auth", authRouter)
 
 
 serverHttp.use((req, res) => {
-  res.status(404).json({ success: false, error: "Ruta no válida o inexistente" })
+  res.status(404).json({ success: false, error: "Ruta no válida o inexistente<" })
 })
 
 const PORT = process.env.PORT

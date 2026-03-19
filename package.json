@@ -1,15 +1,19 @@
 {
-  "name": "tp--user-movie-watchlist",
+  "name": "tp-user-movie-watchlist",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API REST para gestionar una lista de películas (watchlist)",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "node --watch ./src/index.js"
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node", "express", "api", "movies", "watchlist"],
+  "author": "Rocio Benitez",
   "license": "ISC",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
