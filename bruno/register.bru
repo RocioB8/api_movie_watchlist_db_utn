@@ -1,20 +1,20 @@
 meta {
-  name: register
+  name: Register User
   type: http
-  seq: 2
+  seq: 1
 }
 
 post {
-  url: http://localhost:5500/api/auth/register
+  url: {{baseUrl}}/api/auth/register
   body: json
-  auth: inherit
+  auth: none
 }
 
 body:json {
   {
-    "username": "Lucas",
-    "email": "lucas@gmail.com",
-    "password": "rojo24"
+    "username": "testUser",
+    "email": "test@mail.com",
+    "password": "123456"
   }
 }
 

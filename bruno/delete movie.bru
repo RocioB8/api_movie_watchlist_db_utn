@@ -1,25 +1,21 @@
 meta {
-  name: delete movie
+  name: Delete Movie
   type: http
   seq: 6
 }
 
 delete {
-  url: http://localhost:5500/api/movies/697fbb39608c747e0b44d953
-  body: json
-  auth: inherit
+  url: {{baseUrl}}/api/movies/{{movieId}}
+  body: none
+  auth: bearer
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTdmYjc5Y2U3YjM4Y2QxZGNmNWIwZTEiLCJ1c2VybmFtZSI6Ikx1Y2FzIiwiZW1haWwiOiJsdWNhc0BnbWFpbC5jb20iLCJpYXQiOjE3Njk5Nzc3NTYsImV4cCI6MTc2OTk3OTU1Nn0.iSM3y8W_gN0t1qL9VhH9YB2KLS4Krtx_MzTBId2Os1s
+  Authorization: Bearer {{token}}
 }
 
 settings {
   encodeUrl: true
   timeout: 0
 }
-
-⚠ Nota:
-Las requests incluidas en la colección de Bruno utilizan el puerto configurado durante el desarrollo.
-Si el servidor se ejecuta en otro puerto, se debe modificar la URL base en las requests.
 

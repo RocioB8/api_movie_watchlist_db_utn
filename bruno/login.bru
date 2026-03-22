@@ -1,18 +1,23 @@
 meta {
-  name: login
+  name: Login User
   type: http
-  seq: 3
+  seq: 2
 }
 
 post {
-  url: '''
-    http://localhost:5500/api/auth/login
-    
-'''
-  body: none
-  auth: inherit
+  url: {{baseUrl}}/api/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "test@mail.com",
+    "password": "123456"
+  }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

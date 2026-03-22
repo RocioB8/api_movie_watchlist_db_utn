@@ -1,5 +1,11 @@
 # 🎬 TP - Movie Watchlist API
 
+## 🌐 Demo en producción
+
+🔗 https://api-movie-watchlist-db-utn.onrender.com/
+
+⚠️ Nota: Los endpoints de películas requieren autenticación mediante JWT.
+
 ## 📖 Descripción
 
 Este proyecto consiste en el desarrollo de una API REST que permite gestionar una lista de películas personal para cada usuario.

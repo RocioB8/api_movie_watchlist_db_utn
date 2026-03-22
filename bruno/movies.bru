@@ -1,15 +1,20 @@
 meta {
-  name: movies
+  name: Get Movies
   type: http
-  seq: 1
+  seq: 3
 }
 
 get {
-  url: http://localhost:5500/api/movies
-  body: json
-  auth: inherit
+  url: {{baseUrl}}/api/movies
+  body: none
+  auth: bearer
+}
+
+headers {
+  Authorization: Bearer {{token}}
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
